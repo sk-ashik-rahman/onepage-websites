@@ -1,0 +1,811 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+div, section, span, ul, li, a, header{
+    box-sizing: border-box;
+}
+
+
+
+/*css reset*/
+.width{
+    width: 80%;
+    margin: auto;
+    height: auto;
+}
+.white-head{
+    text-align: center;
+    
+}
+
+.Navbar {
+  width: 80%;
+  top: 0;
+  margin: auto;
+ position: fixed;
+  display: flex;
+  padding: 16px;
+  font-family: sans-serif;
+  color: white;
+  justify-content: space-between;
+  z-index: 99999999;
+}
+
+.Navbar__Link {
+  padding-right: 2rem;
+}
+
+.Navbar__Items {
+  display: flex;
+  padding: 1rem;
+}
+.Navbar__Items li{
+ list-style: none;
+ 
+}
+.Navbar__Items li a {
+ text-decoration: none;
+ font-weight: bolder;
+ color: goldenrod;
+ }
+
+.Navbar__Link-toggle {
+  display: none;
+}
+
+#home{
+   
+    background-image: url(images/river.jpg);
+    background-color: rgba(0, 0, 0, 0.336);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left:31%;
+    transform: translate(-50%, -50%);
+    color:goldenrod;
+    font-size: 20px;
+    max-width: 40%;
+    line-height: 3rem;
+    
+} 
+
+.hero-text h1::before{
+    content: "Welcome to TravelX";
+    color: rgb(61, 43, 226);
+    font-size: 3rem;
+}
+.btn2{
+    
+    border-radius: 20px;  
+    width: 8rem; 
+    background-color:    rgb(61, 43, 226);
+    color:goldenrod;
+    text-align: center;
+    border: none;
+}
+.icons{
+display: flex;
+flex-direction: column;
+position: absolute;
+left: 98%;
+top: 40%;
+transition: 1s;
+position: fixed;
+z-index: 999;
+}
+.icons i{
+    color: rgb(139, 139, 241);
+}
+.fab.red{
+    color: rgb(255, 0, 0);
+}
+
+.fab{
+    color: beige;
+    padding: .5rem;
+
+    
+}
+.icons:hover{
+  margin-top: 40px;
+}
+span{
+    border-radius: 30px solid #fff;
+    padding: 2px 12px;
+    background-color: rgb(55, 0, 255);
+    
+   
+   
+}
+.h2{
+    color: #fff;
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    margin-top: 6rem;
+}
+
+.logo{
+background: none;
+color: goldenrod;
+font-size: 40px;
+font-weight: bolder;
+font-family: 'Times New Roman', Times, serif;
+}
+.logo::before
+{
+    content: "Travel";
+    color: rgb(61,43,226);
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5rem 0rem;
+    justify-content: center;
+    margin: auto;
+
+}
+.cards .card1{
+  text-align: center;
+  line-height: 2rem;
+  box-shadow: .5px 1px 3px black;
+  padding: 1.5rem 1rem;
+  margin: 1rem 2rem;
+}
+.cards .card2{
+    text-align: center;
+    line-height: 2rem;
+    box-shadow: .5px 1px 3px black;
+    padding: 1.5rem 2rem;
+    margin: 1rem 2rem;
+}
+.cardimg{
+    width: 20rem;
+    height: auto;
+}
+button{
+    width: 4rem;
+    height: 2rem;
+    background-color: chartreuse;
+    border-radius: .3rem;
+   
+}
+#about{
+   
+    width: 100%;
+    height: auto;
+}
+.circle img{
+  width: 350px;
+  height: auto;
+}
+.about-bg
+{
+    background-image:  url(images/road1.jpg);
+    background-color: rgba(66, 57, 57, 0.151);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.heading {
+   text-align: center;
+}
+
+.content{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    
+}
+.content_left{
+    clip-path: circle(150px at 50% 50%);
+    background-color: rgba(225, 229, 233, 0.37);
+    margin-left: 2rem;
+    
+}
+
+.content_right{
+   padding-left: 16rem;
+   margin-left: 16rem;
+   line-height: 2rem;
+   
+}
+
+.content_right h2, p  {
+    color: rgb(244, 244, 245);
+    width: 80%;
+}
+.car i img {
+    color: rgb(208, 230, 11);
+    position: absolute;
+    animation: mymove 5s infinite;
+    left: 48%;
+    transform: translate(-50, -50);
+    width: 7%;
+    height: auto;
+
+  }
+  @keyframes mymove {
+    from {top: 90%;}
+    to {top: 40%;}
+
+  }
+
+
+#product{
+    background-image: linear-gradient(120deg, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5), transparent 30%), url(images/room.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height:500px;
+    position: sticky;
+    top: 0;
+}
+/* Slider start*/
+#showcase{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .show-content{
+      width: 100%;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+   overflow: hidden;
+  }
+  .show-content .images{
+    width: 100%;
+  }
+  .images img{
+    height:40rem ;
+    width:100% ;
+    margin: auto;
+  }
+  /* Slider end */
+  
+#pricing{
+     background-color: #3C2C3E;
+}
+
+
+/* contact start */
+#contact {
+    background: linear-gradient(to right, #753ae4 0%, #d6c3c7 100%);
+    font-size: 12px;
+  }
+  
+  #contact button, input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+  
+  .background {
+    display: flex;
+    height: auto;
+  }
+  
+  .container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .screen {
+    position: relative;
+    background: #3e3e3e;
+    border-radius: 15px;
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  .screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .screen-header-button.close {
+    background: #1ced5b;
+  }
+  
+  .screen-header-button.maximize {
+    background: #e8e925;
+  }
+  
+  .screen-header-button.minimize {
+    background: #74c54f;
+  }
+  
+  .screen-header-right {
+    display: flex;
+  }
+  
+  .screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+  }
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #f0e9ec;
+    font-size: 26px;
+  }
+  
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #666;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #f5f0f2;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .app-form-button:hover {
+    color: #f0e4e8;
+  }
+  
+  .dribbble {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+  }
+  
+ 
+  
+  /* contact end */
+    /* mobile menu start */
+  @media only screen and (max-width: 768px) {
+    .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+    display: flex;
+    
+    }
+   
+    
+      
+  .Navbar__Items {
+      display:none;
+  }
+    .Navbar__Items li{
+      padding: 2rem;
+      background-color: rgba(39, 19, 153, 0.52);
+
+  }
+  .Navbar__Items li a:hover{
+    color: rgb(255, 0, 0);
+  }
+  
+  .Navbar__ToggleShow {
+      display: flex;
+      text-align: center;
+      
+    }
+      
+  .Navbar__Link-toggle {
+    align-items: center;
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+      padding-top: 2rem;
+
+     }
+ .logo {
+      font-size: 2rem;
+     } 
+     .logo::before{
+       font-size: 2rem;
+
+     }
+     .Navbar__Link-brand{
+       padding-top: 1.5rem;
+     }
+     .Navbar__Link li{
+       display: block;
+     }
+      /* mobile menu end */
+/* social icons start */
+.icons{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 95%;
+  top: 40%;
+  transition: 1s;
+  position: fixed;
+  z-index: 999;
+  }
+  .icons i{
+      color: rgb(139, 139, 241);
+  }
+  .fab.red{
+      color: rgb(255, 0, 0);
+  }
+  
+  .fab{
+      color: beige;
+      padding: .5rem;
+  
+    }
+
+  .icons:hover{
+    margin-top: 40px;
+  }
+  /* social icons end */
+  .hero-text{
+    position: absolute;
+    top: 50%;
+    left:45%;
+    transform: translate(-50%, -50%);
+    color:goldenrod;
+    font-size: 1rem;
+    max-width: 600px;
+    line-height: 2rem;
+    
+} 
+
+.hero-text h1::before{
+    content: "Welcome to TravelX";
+    color: rgb(61, 43, 226);
+    font-size: 2rem;
+}
+.btn2{
+    
+    border-radius: 20px;  
+    width: 6rem; 
+    background-color:    rgb(61, 43, 226);
+    color:goldenrod;
+    text-align: center;
+    border: none;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem 0rem;
+    
+}
+.cards .card2{
+
+    padding: 1.5rem 3.5rem;
+    margin-top: 1rem;
+}
+.cardimg{
+    width: 10rem;
+    height: auto;
+}
+button{
+    width: 4rem;
+    height: 1.5rem;
+}
+
+
+.heading {
+ text-align: center;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.content_left{
+  clip-path: circle(100px at 50% 50%);
+  background-color: rgba(225, 229, 233, 0.37);
+  margin-left: 2rem;
+  
+}
+
+.content_right{
+ padding-left: 1rem;
+ margin: 2rem 1rem;
+ line-height: 2rem;
+ 
+}
+
+
+.circle img{
+  width: 250px;
+  height: auto;
+}
+
+
+.images img{
+  height:20rem ;
+  width:100% ;
+  margin: auto;
+}
+}
+
+@media screen and (min-width: 768.1px) and (max-width: 960px) { 
+    .Navbar__Items li{
+      padding-top: 1.4rem;
+  }
+ .logo {
+      font-size: 2rem;
+     } 
+     .logo::before{
+       font-size: 2rem;
+
+     }
+     .Navbar__Link-brand{
+       padding-top: 1.5rem;
+     }
+  
+      /* mobile menu end */
+/* social icons start */
+.icons{
+
+  left: 97%;
+  top: 40%;
+  transition: 1s;
+  position: fixed;
+  z-index: 999;
+  }
+
+  /* social icons end */
+  .hero-text{
+    position: absolute;
+    top: 50%;
+    left:45%;
+    transform: translate(-50%, -50%);
+    color:goldenrod;
+    font-size: 1rem;
+    max-width: 600px;
+    line-height: 2rem;
+    
+} 
+
+.hero-text h1::before{
+    content: "Welcome to TravelX";
+    color: rgb(61, 43, 226);
+    font-size: 2rem;
+}
+.btn2{
+    
+    border-radius: 20px;  
+    width: 6rem; 
+    background-color:    rgb(61, 43, 226);
+    color:goldenrod;
+    text-align: center;
+    border: none;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem 0rem;
+    
+}
+.cards .card2{
+
+    padding: 1.5rem 3.5rem;
+    margin-top: 1rem;
+}
+.cardimg{
+    width: 10rem;
+    height: auto;
+}
+button{
+    width: 4rem;
+    height: 1.5rem;
+}
+
+
+.heading {
+ text-align: center;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.content_left{
+  clip-path: circle(150px at 50% 50%);
+  background-color: rgba(225, 229, 233, 0.37);
+  margin-left: 2rem;
+  
+}
+
+.content_right{
+ padding-left: 1rem;
+ margin: 2rem 1rem;
+ line-height: 2rem;
+ 
+}
+
+
+.circle img{
+  width: 350px;
+  height: auto;
+}
+
+
+.images img{
+  height:30rem ;
+  width:100% ;
+  margin: auto;
+}
+}
+@media screen and (min-width: 960.1px) and (max-width: 1120px){
+  .cards .card2{
+
+    padding: 1.5rem 3.5rem;
+    margin-top: 1rem;
+}
+.circle img{
+  width: 350px;
+  height: auto;
+}
+
+
+.images img{
+  height:30rem ;
+  width:100% ;
+  margin: auto;
+}
+.content_left{
+  clip-path: circle(150px at 50% 50%);
+  background-color: rgba(225, 229, 233, 0.37);
+  margin-left: 2rem;
+  
+}
+.content{
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  
+}
+
+.content_right{
+ padding-left: 1rem;
+ margin-left: 2rem;
+ line-height: 2rem;
+ 
+}
+
+
+}
+@media screen and (min-width: 1121px) and (max-width: 1400px){
+  .cards .card2{
+
+    padding: 1.5rem 3.5rem;
+    margin-top: 1rem;
+}
+.circle img{
+  width: 350px;
+  height: auto;
+}
+
+
+.images img{
+  height:30rem ;
+  width:100% ;
+  margin: auto;
+}
+.content_left{
+  clip-path: circle(150px at 50% 50%);
+  background-color: rgba(225, 229, 233, 0.37);
+  margin-left: 2rem;
+  
+}
+.content{
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  
+}
+
+.content_right{
+ padding-left: 8rem;
+ margin-left: 6rem;
+ line-height: 2rem;
+ 
+}
+ 
+}
